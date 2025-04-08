@@ -19,6 +19,9 @@
   header {
     background-color: var(--teal);
     color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
     padding: 20px;
     text-align: center;
   }
