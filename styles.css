@@ -1,20 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    background-color: #FAFAFA;
+    color: #333333;
+    font-family: 'Helvetica Neue', sans-serif;
   }
   
   header {
-    background: #64c1ff;
-    color: rgb(4, 29, 255);
+    background-color: #4DA6A6;
+    color: white;
     padding: 20px;
     text-align: center;
   }
   
   nav a {
-    color: #fff;
-    margin: 0 10px;
+    color: white;
     text-decoration: none;
+    margin: 0 10px;
   }
+  
+  nav a:hover {
+    color: #F4D9B0;
+  }
+  
+  section {
+    padding: 40px 20px;
+  }
+  
+  button {
+    background-color: #87CBB9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
   
