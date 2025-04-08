@@ -1,11 +1,23 @@
-body {
-    background-color: #FAFAFA;
-    color: #333333;
-    font-family: 'Helvetica Neue', sans-serif;
+/* === Base Styling === */
+:root {
+    --teal: #4DA6A6;
+    --sand: #F4D9B0;
+    --mint: #87CBB9;
+    --text: #333333;
+    --background: #FAFAFA;
   }
   
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  /* === Header + Nav === */
   header {
-    background-color: #4DA6A6;
+    background-color: var(--teal);
     color: white;
     padding: 20px;
     text-align: center;
@@ -13,25 +25,44 @@ body {
   
   nav a {
     color: white;
+    margin: 0 15px;
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: bold;
   }
   
   nav a:hover {
-    color: #F4D9B0;
+    color: var(--sand);
   }
   
+  /* === Sections === */
   section {
     padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
+  h1, h2 {
+    margin-top: 0;
+    color: var(--teal);
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  /* === Buttons (Optional) === */
   button {
-    background-color: #87CBB9;
+    background-color: var(--mint);
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--teal);
   }
   
   
