@@ -8,12 +8,11 @@
   }
   
   body {
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: var(--background);
-    color: var(--text);
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
+    padding: 0 1rem;
   }
+  
   
   /* === Header + Nav === */
   header {
@@ -25,6 +24,7 @@
     padding: 20px;
     text-align: center;
   }
+  
   
   nav a {
     color: white;
@@ -52,6 +52,24 @@
   p {
     font-size: 1.1rem;
   }
+
+  /* === Pic === */
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* makes it a circle */
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }  
   
   /* === Buttons (Optional) === */
   button {
@@ -68,6 +86,23 @@
     background-color: var(--teal);
   }
 
+  /* === Resume button */
+  .resume-btn {
+    display: inline-block;
+    background-color: #0077b5;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #005582;
+  }
+  
   /* === Skills Columns */
   .skills-columns {
     display: flex;
@@ -96,6 +131,59 @@
     margin-right: 8px;
     color: var(--teal);
   }
+
+  /* === Contact === */
+  #contact {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: row; /* this makes it columns */
+    justify-content: center;
+    gap: 40px; /* space between the two links */
+    margin-top: 20px;
+    flex-wrap: wrap; /* makes it responsive if screen is narrow */
+  }
+  
+  .contact-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .contact-links a:hover {
+    background-color: #d9eefa;
+    transform: translateY(-2px);
+  }  
+  
+  .contact-links a i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .contact-links a:hover {
+    color: #005582;
+  }
+
+  .resume-link {
+    background-color: #e6f2fb;
+  }
+  
+  .resume-link:hover {
+    background-color: #cce7f7;
+  }
+  
+  
+  
     
   
   
